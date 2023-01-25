@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./BOOSTRAP V5.30/bootstrap-5.3.0-alpha1-dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lato-font/3.0.0/css/lato-font.min.css" integrity="sha512-rSWTr6dChYCbhpHaT1hg2tf4re2jUxBWTuZbujxKg96+T87KQJriMzBzW5aqcb8jmzBhhNSx4XYGA6/Y+ok1vQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Speed Typing Game</title>
+</head>
+<body>
+    <!-- CONTAINER of whole page -->
+    <div class="container-style"> 
+        <header class="header bg-primary-site p-4">Word Game</header>
+        <div class="mt-5">
+            <p class="lead text-primary-site m-0">You have<small class="small_green mx-3">0</small>second(s)</p>
+            <!-- Showing text -->
+            <span class="lead text-white fs-1 m-4 showing-text">Word</span>
+            <!-- Input -->
+            <input type="text" name="input" id="input" class="w-25 p-4 rounded b-n" placeholder="Type in word....">
+            <!-- game-over -->
+            <div class="game-over mt-3 lead text-white"></div>
+             <!-- results -->
+            <div class="d-flex mt-4 flex-row justify-content-between w-25">
+                <p class="lead">Time:<small id="small" class="text-white"></small></p>
+                <p class="lead">Score:<small class="id_score text-white"></small></p>
+            </div>
+            <!-- Buttons -->
+            <div class="buttons mt-5 mx-2">
+                <h3>LEVELS!!!</h3>
+                <button class="btn btn-primary" id="easy">Easy</button>
+                <button class="btn btn-primary" id="medium">Medium</button>
+                <button class="btn btn-primary" id="hard">Hard</button>
+                <button class="btn btn-primary" id="ext">Extreme</button><br /><br />
+                <div class="d-flex">
+                    <button class="btn btn-primary m-auto" id="instr">Instructions</button>
+                </div>
+            </div>
+            <!-- high score -->
+            <div class="high-score">
+                <!-- <p class="lead text-white">High-score: <small class="lead small_hi_score"></small></p> -->
+                <p class="lead text-white">Read me <i class="fas fa-arrow-down"></i></small></p>
+            </div>
+            <!-- instructions -->
+            <div class="card mt-5 mb-2 w-25 p-3 text-center">
+                <span class="lead">Instructions</span>
+                <p>Type in the given word and hit enter when done. On click of the input time will start You can see your high score!! Have fun!!!! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis asperiores corrupti accusamus cupiditate ea nisi quo animi facilis rerum vitae.</p>
+            </div>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
